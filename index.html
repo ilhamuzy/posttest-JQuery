@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Test JQuery | Ananda Ilham</title>
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- JQUERY ELEMENT SELECTOR MENGGUNAKAN #
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#pakeid").hide();
+            });
+        });
+    </script> -->
+
+    <!-- JQUERY ELEMENT SELECTOR MENGGUNAKAN .
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".pakeclass").hide();
+            });
+        });
+    </script> -->
+
+    <!-- JQUERY ELEMENT SELECTOR MENGGUNAKAN ul li : first
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("ul li:first").hide();
+            });
+        });
+    </script> -->
+
+    <!-- JQUERY  EVENT CLICK SEKALI ()
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+            });
+        });
+    </script> -->
+
+    <!-- JQUERY EVENT CLICK DUA KALI ()
+    <script>
+        $(document).ready(function(){
+            $(".klikdua").dblclick(function(){
+                $(this).hide();
+            });
+        });
+    </script> -->
+
+    <!-- JQUERY MOUSEENTER
+    <script>
+        $(document).ready(function(){
+            $(".mouseenter").mouseenter(function(){
+                alert("Kan udah dibilang jangan dilakuin, ngeyel !");
+            });
+        });
+    </script> -->
+
+    <!-- JQUERY EVENT FOCUS () $ BLUR()
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color", "red");
+            });
+            $("input").blur(function(){
+                $(this).css("background-color", "blue");
+            });
+        });
+    </script> -->
+
+    <!-- JQUERY SLIDEUP () SLIDEDOWN () SLIDETOGGLE()
+    <script>
+        $(document).ready(function(){
+            $(".flip").dblclick(function(){
+                $(".panel").slideToggle("slow");
+            });
+        });
+    </script> -->
+
+    <!-- JQUERY HIDE & SHOW
+    <script>
+        $(document).ready(function(){
+            $(".hide").click(function(){
+                $(".text").hide();
+            });
+            $(".show").click(function(){
+                $(".text").show();
+            });
+        });
+    </script> -->
+
+    <!-- JQUERY GET
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("Value: " + $(".test").val());
+            });
+        });
+    </script> -->
+
+    <!-- JQUERY SET -->
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#test1").text("Apa ini?");
+            });
+            $("#btn2").click(function(){
+                $("#test2").html("<b>Kalo ini apa?</b>");
+            });
+            $("#btn3").click(function(){
+                $("#test3").val("RIP!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- JQUERY ELEMENT SELECTOR MENGGUNAKAN #
+    
+    <h2>Ini dinamakan heading 2</h2>
+
+    <p>paragraf pertama</p>
+    <p id="pakeid">paragraf kedua</p>
+
+    <button>jika diklik akan hilang paragrafnya</button> -->
+
+    <!-- JQUERY ELEMENT SELECTOR MENGGUNAKAN . (class)
+    
+    <h2>Ini dinamakan heading 2</h2>
+
+    <p class="pakeclass">paragraf pertama</p>
+    <p class="pakeclass">paragraf kedua</p>
+
+    <button>jika diklik akan hilang paragrafnya</button> -->
+
+    <!-- JQUERY ELEMENT SELECTOR MENGGUNAKAN ul li:first
+    <p>Daftar 1:</p>
+    <ul>
+        <li>Susu</li>
+        <li>Teh</li>
+        <li>Kopi</li>
+    </ul>
+    <button>Klik tombol ini</button> -->
+
+    <!-- JQUERY EVENT CLICK() SEKALI
+    <p>Jika ini diklik akan hilang looo !</p>
+    <p>Percaya gak kalo ini diklik sekali hilang?</p>
+    <p>Coba diklik deh</p> -->
+
+    <!-- JQUERY EVENT CLICK DUAKALI ()
+    <p class="klikdua">Jika diklik dua kali hilang ga sih?</p>
+    <p class="klikdua">Kok bisa ya?</p>
+    <p class="klikdua">Lah buset bisa?!</p> -->
+
+    <!-- JQUERY EVENT MOUSEENTER
+    <p class="mouseenter">Jangan arahkan cursor ke sini !</p> -->
+
+    <!-- JQUERY EVENT FOUCS () & BLUR () <br>
+    Name: <input type="text" name="Fullname"><br>
+    Email: <input type="text" name="Email"> -->
+
+    <!-- JQUERY SLIDEUP SLIDE DOWN SLIDE slideToggle
+    <div class="flip">Klik dua kali dulu dongsss</div>
+    <div class="panel">Pelan-pelan ya turunnya wkwk</div> -->
+
+    <!-- JQUERY HIDE & SHOW
+    <p class="text">Jika diklik tombol hide, bisa ilang looo</p>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button> -->
+    
+    <!-- JQUERY GET
+    <p>Name: <input type="text" class="test" value="Kobe"></p>
+    <button>Hasil</button> -->
+
+    <!-- JQUERY SET -->
+    <p id="test1">Coba ah</p>
+    <p id="test2">Coba lagi ah</p>
+    <p>Input field: <input type="text" id="test3" value="Kobe"></p>
+    <button id="btn1">Set text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+</body>
+</html>
